@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="container">
+<section data-ng-controller="ArticlesController" data-ng-init="findOne()">
+    <h1 data-ng-bind="article.title"></h1>
+        <div data-ng-show="authentication.user._id == article.creator._id">
+            <a href="/#!/articles/{{article._id}}/edit">edit</a>
+            <a href="#" data-ng-click="delete();">delete</a>
+        </div>
+        <div class="panel panel-default">
+        <div class="panel-heading">
+
+            <em>Posted on</em>
+            <em data-ng-bind="article.created | date : 'medium'"></em>
+            <em>by</em>
+            <em data-ng-bind="article.creator.username"></em>
+
+        </div>
+        <div class="panel-body">
+            <p class="test1" data-ng-bind="article.content"></p>
+          </div>
+</section>
+</div>
+</body>
+</html>

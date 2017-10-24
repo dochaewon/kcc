@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>ARCHITECTURE TEAM★</h1>
+  <p>회의록!</p>
+</div>
+<section ng-controller="ExampleController">
+<div data-ng-show="!authentication.user">
+    <a href="/signup">Signup</a>
+    <a href="/signin">Signin</a>
+</div>
+<div data-ng-show="authentication.user" class="text-center">
+    <h1><span data-ng-bind="authentication.user.username"></span></h1>
+    <a href="/signout">Signout</a> </br></br></br></br></br>
+    <div class="container">
+
+  <a href="/#!/articles" class="btn btn-info" role="button">회의록 목록</a></br></br></br>
+  <a href="/#!/articles/create" class="btn btn-info" role="button">회의록 작성</a></br></br></br>
+</div>
+</div>
+</section>
+</body>
+</html>

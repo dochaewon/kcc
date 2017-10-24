@@ -1,0 +1,25 @@
+{
+  "name": "winnie",
+  "version": "1.0.0",
+  "main": "StartApp.js",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "compression": "^1.6.2",
+    "ejs": "~1.0.0",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "forever": "^0.15.2",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.10.8",
+    "morgan": "^1.7.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
